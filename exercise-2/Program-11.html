@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Program-11">
+    <title>Program-11</title>
+</head>
+<body>
+    <script>
+        function User( userId, firstName, lastName, password, email, gender, age, accountCreated){
+                this.userId = userId,
+                this.firstName = firstName,
+                this.lastName = lastName,
+                this.password = password,
+                this.email = email,
+                this.gender = gender,
+                this.age = age,
+                this.accountCreated = accountCreated,
+                this.displayAge = function(){
+                    console.log(`
+                    Age: ${this.age}`);
+                },
+                this.displayAccountCreated = function() {
+                    console.log(`
+                    AccountCreated: ${this.accountCreated}`);
+                }
+        }
+
+
+    let deepak   = new User(1,"deepak","jain","abc1234","d@gmail.com","Male",25,true);
+    let Pavan    = new User(2,"Pavan","Kumar","abc1234","p@gmail.com","Male",24,false);
+    let Tejas    = new User(3,"Tejas","jain","abc1234","t@gmail.com","Male",23,true);
+    let Anirudh  = new User(4,"Anirudh","jain","abc1234","a@gmail.com","Male",26,false);
+    let Nagendra = new User(5,"Nagendra","jain","abc1234","n@gmail.com","Male",22,true);
+
+    deepak.displayAge();
+    deepak.displayAccountCreated();
+
+    Pavan.displayAge();
+    Pavan.displayAccountCreated();
+
+    Tejas.displayAge();
+    Tejas.displayAccountCreated();
+
+    Anirudh.displayAge();
+    Anirudh.displayAccountCreated();
+
+    Nagendra.displayAge();
+    Nagendra.displayAccountCreated();
+
+    </script>
+</body>
+</html>
